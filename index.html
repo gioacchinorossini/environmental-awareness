@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<!-- Coding by CodingNepal - youtube.com/@codingnepal -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSAB Food Stalls Feedback Hub</title>
+    <!-- Linking Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <!-- Linking Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header / Navbar -->
+    <header>
+      <nav class="navbar">
+        <a href="#" class="nav-logo">
+          <h2 class="logo-text">
+            <div class="logo-wrapper">
+            <img src="logogoo.png" class="logoimg"/>
+            </div></h2>
+        </a>
+
+        <ul class="nav-menu">
+          <button id="menu-close-button" class="fas fa-times"></button>
+
+          <li class="nav-item">
+            <a href="#" class="nav-link nav-linkhighlight" onclick="highlightLink(this)">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link" onclick="highlightLink(this)">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#menu" class="nav-link" onclick="highlightLink(this)">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a href="#gallery" class="nav-link" onclick="highlightLink(this)">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link" onclick="highlightLink(this)">Contact</a>
+          </li>
+        </ul>
+
+        <button id="menu-open-button" class="fas fa-bars"></button>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero section -->
+      <section class="hero-section">
+        <div class="section-content">
+          <div class="hero-details">
+            <h2 class="title"><b>Delivery anywhere.</b> Bringing nature to your doorstep.
+            </h2>
+            <h3 class="subtitle">Embrace <br>
+              the Setting Sun
+              </h3>
+            <p class="description">Discover the perfect harmony of nature and coffee. Explore our eco-friendly plants and brews, 
+              crafted to inspire greener living. Let’s grow together toward a better planet.
+              
+            </p>
+
+            <div class="buttons">
+              <a href="#" class="button order-now">Order Now</a>
+              <a href="#contact" class="button contact-us">Contact Us</a>
+            </div>
+          </div>
+          <div class="hero-image-wrapper">
+      
+          </div>
+        </div>
+      </section>
+
+      <!-- About section -->
+      <section class="about-section" id="about">
+        <div class="section-content">
+          <div class="about-image-wrapper">
+            <img src="images/about.jpg" alt="About" class="about-image" />
+          </div>
+          <div class="about-details"> 
+            <h2 class="section-title">About Us</h2>
+            <p class="text">"At XIAXIA, we believe that small changes can make a big impact. By encouraging plant care 
+              and eco-conscious coffee consumption, we're committed to promoting sustainability and protecting our planet for future generations."</p>
+            <div class="social-link-list">
+              <a href="#" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#" class="social-link"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Menu section -->
+      <section class="menu-section" id="menu">
+        <h2 class="section-title">Menu</h2>
+        <div class="section-content">
+          <ul class="menu-list">
+            <li class="menu-item">
+              <img src="images/aplant.png" alt="Hot Beverages" class="menu-image" />
+              <div class="menu-details">
+                <h3 class="name">Product Name</h3>
+                <p class="text">Wide range of Steaming hot coffee to make you fresh and light.</p>
+              </div>
+            </li>
+            <li class="menu-item">
+              <img src="images/aplant.png" alt="Cold Beverages" class="menu-image" />
+              <div class="menu-details">
+                <h3 class="name">Product Name</h3>
+                <p class="text">Creamy and frothy cold coffee to make you cool.</p>
+              </div>
+            </li>
+            <li class="menu-item">
+              <img src="images/aplant.png" alt="Refreshment" class="menu-image" />
+              <div class="menu-details">
+                <h3 class="name">Product Name</h3>
+                <p class="text">Fruit and icy refreshing drink to make feel refresh.</p>
+              </div>
+            </li>
+            <li class="menu-item">
+              <img src="images/pngegg.png" alt="Special Combos" class="menu-image" />
+              <div class="menu-details">
+                <h3 class="name">Product Name</h3>
+                <p class="text">Your favorite eating and drinking combations.</p>
+              </div>
+            </li>
+            <li class="menu-item">
+              <img src="images/pngegg.png" alt="Dessert" class="menu-image" />
+              <div class="menu-details">
+                <h3 class="name">Product Name</h3>
+                <p class="text">Satiate your palate and take you on a culinary treat.</p>
+              </div>
+            </li>
+            <li class="menu-item">
+              <img src="images/pngegg.png" alt="burger & French Fries" class="menu-image" />
+              <div class="menu-details">
+                <h3 class="name">Product Name</h3>
+                <p class="text">Quick bites to satisfy your small size hunger.</p>
+
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Testimonials section -->
+      <section class="testimonials-section" id="testimonials">
+        <h2 class="section-testi">Reviews</h2>
+        <div class="section-content">
+          <div class="slider-container swiper">
+            <div class="slider-wrapper">
+              <ul class="testimonials-list swiper-wrapper">
+                <li class="testimonial swiper-slide">
+                  <img src="images/user-1.jpg" alt="User" class="user-image" />
+                  <h3 class="name">Sarah Johnson</h3>
+                  <i class="feedback">"Perfect way to help the environment!"</i>
+                </li>
+                <li class="testimonial swiper-slide">
+                  <img src="images/user-2.jpg" alt="User" class="user-image" />
+                  <h3 class="name">James Wilson</h3>
+                  <i class="feedback">"Great espresso blend! Smooth and bold flavor. Fast shipping too!"</i>
+                </li>
+                <li class="testimonial swiper-slide">
+                  <img src="images/user-3.jpg" alt="User" class="user-image" />
+                  <h3 class="name">Michael Brown</h3>
+
+                  <i class="feedback">"Fantastic mocha flavor. Fresh and aromatic. Quick shipping!"</i>
+                </li>
+                <li class="testimonial swiper-slide">
+                  <img src="images/user-4.jpg" alt="User" class="user-image" />
+                  <h3 class="name">Emily Harris</h3>
+
+                  <i class="feedback">"Excellent quality! Fresh beans and quick delivery. Highly recommend."</i>
+                </li>
+                <li class="testimonial swiper-slide">
+                  <img src="images/user-5.jpg" alt="User" class="user-image" />
+                  <h3 class="name">Anthony Thompson</h3>
+
+                  <i class="feedback">"Best decaf I've tried! Smooth and flavorful. Arrived promptly."</i>
+                </li>
+              </ul>
+
+              <div class="swiper-pagination"></div>
+              <div class="swiper-slide-button swiper-button-prev"></div>
+              <div class="swiper-slide-button swiper-button-next"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Gallery section -->
+      <section class="gallery-section" id="gallery">
+        <h2 class="section-testi">Gallery</h2>
+        <div class="section-content">
+          <ul class="gallery-list">
+            <li class="gallery-item">
+              <img src="images/gallery-1.jpg" alt="Gallery Image" class="gallery-image" />
+            </li>
+            <li class="gallery-item">
+              <img src="images/gallery-2.jpg" alt="Gallery Image" class="gallery-image" />
+            </li>
+            <li class="gallery-item">
+              <img src="images/gallery-3.jpg" alt="Gallery Image" class="gallery-image" />
+            </li>
+            <li class="gallery-item">
+              <img src="images/gallery-4.jpg" alt="Gallery Image" class="gallery-image" />
+            </li>
+            <li class="gallery-item">
+              <img src="images/gallery-5.jpg" alt="Gallery Image" class="gallery-image" />
+            </li>
+            <li class="gallery-item">
+              <img src="images/gallery-6.jpg" alt="Gallery Image" class="gallery-image" />
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Contact section -->
+      <section class="contact-section" id="contact">
+        <h2 class="section-testi">Contact Us</h2>
+        <div class="section-content">
+          <ul class="contact-info-list">
+            <li class="contact-info">
+              <i class="fa-solid fa-location-crosshairs"></i>
+              <p>123 Campsite Avenue, Wilderness, CA 98765</p>
+            </li>
+            <li class="contact-info">
+              <i class="fa-regular fa-envelope"></i>
+              <p>xixia@gmail.com</p>
+            </li>
+            <li class="contact-info">
+              <i class="fa-solid fa-phone"></i>
+              <p>(123) 456-78909</p>
+            </li>
+            <li class="contact-info">
+              <i class="fa-regular fa-clock"></i>
+              <p>Monday - Friday: 9:00 AM - 5:00 PM</p>
+            </li>
+            <li class="contact-info">
+              <i class="fa-regular fa-clock"></i>
+              <p>Saturday: 10:00 AM - 3:00 PM</p>
+            </li>
+            <li class="contact-info">
+              <i class="fa-regular fa-clock"></i>
+              <p>Sunday: Closed</p>
+            </li>
+            <li class="contact-info">
+              <i class="fa-solid fa-globe"></i>
+              <p>www.xiaxia.com</p>
+            </li>
+          </ul>
+
+          <form action="#" class="contact-form">
+            <input type="text" placeholder="Your name" class="form-input" required />
+            <input type="email" placeholder="Your email" class="form-input" required />
+            <textarea placeholder="Your message" class="form-input" required></textarea>
+            <button type="submit" class="button submit-button">Submit</button>
+          </form>
+        </div>
+      </section>
+
+      <!-- Footer section -->
+      <footer class="footer-section">
+        <div class="section-content">
+          <p class="copyright-text">© 2024 XIAXIA</p>
+
+          <div class="social-link-list">
+            <a href="#" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="social-link"><i class="fa-brands fa-x-twitter"></i></a>
+          </div>
+
+          <p class="policy-text">
+            <a href="#" class="policy-link">Privacy policy</a>
+            <span class="separator">•</span>
+            <a href="#" class="policy-link">Refund policy</a>
+          </p>
+        </div>
+      </footer>
+    </main>
+
+    <!-- Linking Swiper script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Linking custom script -->
+    <script src="script.js"></script>
+
+      <script>
+          window.onscroll = function() { changeNavbarBackground() };
+  
+          function changeNavbarBackground() {
+              const navbar = document.querySelector('header .navbar');
+              
+              if (window.scrollY > 50) { // Change 50 to the scroll position where you want the background color to change
+                  navbar.style.backgroundColor = 'rgba(255, 255, 255, 1)'; // Solid white background
+              } else {
+                  navbar.style.backgroundColor = 'rgba(255, 255, 255, 0)'; // Transparent background
+              }
+          }
+      </script>
+
+      <script>
+function highlightLink(link) {
+  // Remove the highlight class from all links
+  let links = document.querySelectorAll('.nav-link');
+  links.forEach(function(linkItem) {
+    linkItem.classList.remove('nav-linkhighlight');
+  });
+
+  // Add the highlight class to the clicked link
+  link.classList.add('nav-linkhighlight');
+}
+      </script>
+  </body>
+  
+  </body>
+</html>
